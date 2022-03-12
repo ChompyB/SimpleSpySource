@@ -901,13 +901,13 @@ function mouseEntered()
 			)
 			local inRange, type = isInResizeRange(mouseLocation)
 			if inRange and not sideClosed and not closed then
-				customCursor.Image = type == "B" and "rbxassetid://6065821980"
-					or type == "X" and "rbxassetid://6065821086"
-					or type == "Y" and "rbxassetid://6065821596"
+				customCursor.Image = type == "B" and "rbxassetid://3165358786"
+					or type == "X" and "rbxassetid://3165358786"
+					or type == "Y" and "rbxassetid://3165358786"
 			elseif inRange and not closed and type == "Y" or type == "B" then
-				customCursor.Image = "rbxassetid://6065821596"
-			elseif customCursor.Image ~= "rbxassetid://6065775281" then
-				customCursor.Image = "rbxassetid://6065775281"
+				customCursor.Image = "rbxassetid://3165358786"
+			elseif customCursor.Image ~= "rbxassetid://3165358786" then
+				customCursor.Image = "rbxassetid://3165358786"
 			end
 		else
 			UserInputService.OverrideMouseIconBehavior = Enum.OverrideMouseIconBehavior.None
@@ -2184,10 +2184,10 @@ if not _G.SimpleSpyExecuted then
 		end
 		_G.SimpleSpyShutdown = shutdown
 		ContentProvider:PreloadAsync({
-			"rbxassetid://6065821980",
-			"rbxassetid://6065774948",
-			"rbxassetid://6065821086",
-			"rbxassetid://6065821596",
+			"rbxassetid://3165358786",
+			"rbxassetid://3165358786",
+			"rbxassetid://3165358786",
+			"rbxassetid://3165358786",
 			ImageLabel,
 			ImageLabel_2,
 			ImageLabel_3,
